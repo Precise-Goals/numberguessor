@@ -12,6 +12,14 @@ div#main {
   flex-direction: row;
   align-items: center;
 }
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-track {
+  width: 4px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #ffc027;
+}
 
 ul {
   list-style: none;
@@ -88,6 +96,22 @@ ul.l {
 .l li {
   font-size: 180%;
   font-family: "Poppins";
+}
+
+/* Footer Component */
+footer.foot {
+  background: white;
+  font-family: "Poppins";
+  font-weight: 600;
+  padding: 3% 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.foot p {
+  margin: 1% 0 6% 0;
 }
 
 @media only screen and (max-width: 768px) {

@@ -1,0 +1,121 @@
+div#main {
+  position: relative;
+  font-family: "Montserrat";
+  /* background: linear-gradient(45deg, #1f0616, #101010, #220445); */
+  background: url(./assets/abs3.jpg);
+  height: 100vh;
+  color: white;
+  background-size: cover;
+  display: flex;
+  padding: 5% 10%;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+nav.top {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+ul.l {
+  list-style: none;
+}
+
+h1.title {
+  font-size: 30px;
+}
+
+input.num {
+  background: transparent;
+  border: 1px solid white;
+  padding: 5% 10%;
+  border-radius: 4rem 0rem 0rem 4rem;
+  font-size: 20px;
+  font-weight: 600;
+  text-anchor: white;
+}
+input.num:focus-visible,
+input.num:focus,
+input.num:focus-within {
+  border: 1px solid white;
+  color: white;
+  outline: none;
+}
+
+.game {
+  margin: 1em 0;
+  display: flex;
+  width: 25%;
+  gap: 0em;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: row;
+}
+
+button.guess {
+  border: none;
+  padding: 2% 10%;
+  border-radius: 0rem 4rem 4rem 0rem;
+  font-size: 20px;
+  font-weight: 700;
+}
+section.div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 60%;
+  border-radius: 6rem;
+  box-shadow: 0 0 2rem 1px #ffffff1d;
+}
+.hint p {
+  font-size: 17px;
+  font-weight: 400;
+  color: lightgrey;
+}
+section.div {
+  width: 50%;
+  backdrop-filter: blur(15px);
+}
+ul.l {
+  font-size: 50px;
+}
+
+.l li {
+  font-size: 180%;
+  font-family: "Poppins";
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+  div#main {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  section.div {
+    width: 100%;
+  }
+
+  h1.title {
+    font-size: 20px;
+  }
+  input.num {
+    font-size: 15px;
+  }
+
+  button.guess {
+    font-size: 15px;
+  }
+}

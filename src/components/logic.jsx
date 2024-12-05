@@ -12,12 +12,15 @@ export const Logic = () => {
     return Math.floor(Math.random() * 100) + 1;
   }
 
+  // handles the enter key
   function handleInputChange(e) {
     setGuess(e.target.value);
   }
 
   function handleGuess() {
+    // conversion of strong to number
     const parsedGuess = parseInt(guess);
+
     if (isNaN(parsedGuess)) {
       setHint("Please Enter a Valid Number");
       return;
